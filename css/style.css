@@ -1,0 +1,68 @@
+/* Doodle Stage */
+#stage {
+  background: skyblue;
+  height: 300px;
+  width: 600px;
+}
+
+img {
+  width: 14%;
+  height: auto;
+}
+
+#slide {
+  width: 10%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 200px;
+    top: 15px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 200px;
+    top: 15px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
+#stage {
+  height: 150px;
+  position: relative;
+}
+
+#slide {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+#stage:hover #slide {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}

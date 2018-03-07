@@ -1,0 +1,56 @@
+// External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+
+/* Doodle Stage */
+#stage {
+  background: skyblue;
+  height: 300px;
+  width: 600px;
+}
+
+img {
+  width: 14%;
+  height: auto;
+  
+  }
+
+#slide {
+  width: 10%;
+  
+ 
+  }
+
+
+  
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 200px;
+    top: 15px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
+
+#stage {
+  height: 150px;
+  position: relative;
+}
+#slide {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+#stage:hover #slide {
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+
+
